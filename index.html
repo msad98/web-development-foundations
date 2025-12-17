@@ -3,7 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Web Development Foundations</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
-    <body></body>
+    <body>
+        <h1>Welcome to Web Development Foundations</h1>
+        <p>This is a basic HTML structure for a web development project.</p>
+        <section>
+            <h2>Working with Text</h2>
+            <!-- WORKING WITH TEXT ----------------------------------------------------------------------  -->
+            <p>You can create paragraphs, headings, lists, and more using HTML tags. This text that you can see is a paragraph.</p>
+            <p>We have 6 heading elements (h1 through h6) in HTML.</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <p>
+                We have two types of lists. An ordered list is created with the "ol" tag, and an unordered list is created with the "ul" tag.
+                <br>
+                🔑 Decision rule (remember!) Can I say "a list of ..."? Is it a list?
+                <br>
+                → Yes → ul (e.g., list of services). You can then style them like cards.
+                <br>
+                → No → div
+            </p>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+            </ul>
+        </section>
+        <!--LINKS and IMAGES ----------------------------------------------------------------------  -->
+        <section>
+            <h2>Links and Images</h2>
+            <p>
+                You can create hyperlinks using the "a" tag. The "href" attribute specifies the URL of the page the link goes to.
+            </p>
+            <a href="https://www.example.com">Visit the absolute path of https://www.example.com</a>
+            <a href="README.md">Visit the relative path of README file</a>
+            <a href="mailto:example@example.com?body=Hello%20There">MAILTO: click to mail me</a>
+            <a href="sms:+436642590262?body=Hello%20There">SMS: Send me SMS with predefined body</a>
+            <a href="tel:+436642590262">TEL: Call me on phone</a>
+        </section>
+    </body>
 </html>
