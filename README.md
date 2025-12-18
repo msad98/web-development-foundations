@@ -21,3 +21,6 @@ Explore the files in this repository to understand core web development principl
 ---
 
 *A learning resource for web development basics.*
+
+## IMAGES
+- All images are provided by [Unsplash](https://unsplash.com/) and are free to use under the Unsplash license.

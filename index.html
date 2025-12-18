@@ -4,70 +4,83 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Development Foundations</title>
+    <!-- this meta description of your webpage is shown when the search engine like google lists your web as a result (then it shows also this description, pretty handy)-->
+    <meta name="description" content="A basic HTML structure for a web development project." />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="../assets/fav-icon.png" type="image/png" />
+    <!--icon being displayed on the tab of your current webpage -->
+    <title>Web Development Foundations</title>
+
 </head>
 
 <body>
-    <h1>Welcome to Web Development Foundations</h1>
-    <p>This is a basic HTML structure for a web development project.</p>
-    <section>
-        <h2>Working with Text</h2>
-        <!-- WORKING WITH TEXT ----------------------------------------------------------------------  -->
-        <!--strong tag and emphasis (em) tag show the importance of some text which is important for assistive technologies such as screen readers -->
-        <p>
-            You can create <strong>paragraphs</strong>, <strong>headings</strong>,
-            <strong>lists</strong>, and more using HTML tags. This text that you can
-            see is a paragraph.
-        </p>
+    <header>
+        <h1>Welcome to Web Development Foundations</h1>
 
-        <p>We have 6 heading elements <em>(h1 through h6)</em> in HTML.</p>
-
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <p>
-            We have two types of lists. An ordered list is created with the "ol"
-            tag, and an unordered list is created with the "ul" tag.
-            <br />
-            🔑 Decision rule (remember!) Can I say "a list of ..."? Is it a list?
-            <br />
-            → Yes → ul (e.g., list of services). You can then style them like cards.
-            <br />
-            → No → div
-        </p>
-        <h3>Ordered List</h3>
-        <ol>
-            <li>First item</li>
-            <li>Second item</li>
-        </ol>
-        <h3>Unordered List</h3>
-        <ul>
-            <li>First item</li>
-            <li>Second item</li>
-        </ul>
-    </section>
-    <!--LINKS and IMAGES ----------------------------------------------------------------------  -->
-    <section>
-        <h2>Links</h2>
-        <p>
-            You can create hyperlinks using the "a" tag. The "href" attribute
-            specifies the URL of the page the link goes to.
-        </p>
-        <ul>
-            <li><a href="https://www.example.com">Visit the absolute path of https://www.example.com</a></li>
-            <li><a href="https://www.example.com" target="_blank" rel="noopener">Visit page in new tab</a></li>
-            <!-- target blank specifies to open in new tab and noopener means, that the new page cannot access the original page's information(and cant refresh that original page with his own page that could be scammy) -->
-            <li><a href="README.md">Visit the relative path of README file</a></li>
-            <li><a href="mailto:example@example.com?body=Hello%20There">MAILTO: click to mail me</a></li>
-            <li><a href="sms:+436642590262?body=Hello%20There">SMS: Send me SMS with predefined body</a></li>
-            <li><a href="tel:+436642590262">TEL: Call me on phone</a></li>
-        </ul>
-
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <section>
+            <h2>Working with Text</h2>
+            <!-- WORKING WITH TEXT ----------------------------------------------------------------------  -->
+            <!--strong tag and emphasis (em) tag show the importance of some text which is important for assistive technologies such as screen readers -->
+            <p>
+                You can create <strong>paragraphs</strong>, <strong>headings</strong>,
+                <strong>lists</strong>, and more using HTML tags. This text that you can
+                see is a paragraph.
+            </p>
+
+            <p>We have 6 heading elements <em>(h1 through h6)</em> in HTML.</p>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <p>
+                We have two types of lists. An ordered list is created with the "ol"
+                tag, and an unordered list is created with the "ul" tag.
+                <br />
+                🔑 Decision rule (remember!) Can I say "a list of ..."? Is it a list?
+                <br />
+                → Yes → ul (e.g., list of services). You can then style them like cards.
+                <br />
+                → No → div
+            </p>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+            </ul>
+        </section>
+        <!--LINKS and IMAGES ----------------------------------------------------------------------  -->
+        <section>
+            <h2>Links and Images</h2>
+            <p>
+                You can create hyperlinks using the "a" tag. The "href" attribute
+                specifies the URL of the page the link goes to.
+            </p>
+            <ul>
+                <li><a href="https://www.example.com">Visit the absolute path of https://www.example.com</a></li>
+                <li><a href="https://www.example.com" target="_blank" rel="noopener">Visit page in new tab</a></li>
+                <!-- target blank specifies to open in new tab and noopener means, that the new page cannot access the original page's information(and cant refresh that original page with his own page that could be scammy) -->
+                <li><a href="README.md">Visit the relative path of README file</a></li>
+                <li><a href="mailto:example@example.com?body=Hello%20There">MAILTO: click to mail me</a></li>
+                <li><a href="sms:+436642590262?body=Hello%20There">SMS: Send me SMS with predefined body</a></li>
+                <li><a href="tel:+436642590262">TEL: Call me on phone</a></li>
+            </ul>
+
             <h2>Images</h2>
             <p>
                 You can add images using the "img" tag. The "src" attribute
@@ -78,8 +91,12 @@
             <img src="../assets/piste.jpg" alt="ski-slope" width="300" height="450" />
             <img src="../assets/ski.jpg" alt="ski" width="300" height="450" />
             <img src="../assets/skibrillen.jpg" alt="ski-glasses" width="300" height="450" />
+
         </section>
-    </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Web Development Foundations. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
