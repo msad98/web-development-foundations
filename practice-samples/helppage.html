@@ -1,3 +1,4 @@
+<!-- This is the recreated example of https://www.frontendpractice.com/projects/abstract -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,8 +14,10 @@
             padding: 0;
         }
 
+        html,
         body {
             font-family: Arial, sans-serif;
+            width: 100%;
         }
 
         button {
@@ -35,9 +38,7 @@
             font-size: 0.9rem;
         }
 
-
         header button {
-
             color: white;
 
             &.outlined {
@@ -57,6 +58,8 @@
             align-items: center;
         }
 
+        /*  > * + * notation says to apply styles to every sibling element 
+        inside the branding element (every direct child of branding) except the first one.*/
         header .branding>*+* {
             margin-left: 0.35rem;
         }
@@ -201,7 +204,6 @@
                 <button><i class="fa-solid fa-arrow-right"></i></button>
             </section>
         </section>
-
         <section class="services">
             <div class="service-column">
                 <div class="service-card">
@@ -267,7 +269,6 @@
             <h4>Abstract</h4>
             <a href="#">Branches</a>
         </div>
-
         <div class="quick-links-box">
             <h4>Resources</h4>
             <a href="#">Blog</a>
@@ -275,7 +276,6 @@
             <a href="#">Release Notes</a>
             <a href="#">Status</a>
         </div>
-
         <div class="quick-links-box">
             <h4>Community</h4>
             <a href="#">Twitter</a>
@@ -283,7 +283,6 @@
             <a href="#">Dribble</a>
             <a href="#">Facebook</a>
         </div>
-
         <div class="quick-links-box">
             <h4>Company</h4>
             <a href="#">About Us</a>
