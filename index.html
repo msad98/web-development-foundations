@@ -16,11 +16,12 @@
 <body>
     <header>
         <h1>Welcome to Web Development Foundations</h1>
-
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <!-- Fragment Identifier: when entering # +id-name, when user clicks on this, browser jumps to the html element with this id (scrolls to this viewport)-->
+                <li><a href="#imagesandlinks">Images and Links</a></li>
             </ul>
         </nav>
     </header>
@@ -65,7 +66,7 @@
             </ul>
         </section>
         <!--LINKS and IMAGES ----------------------------------------------------------------------  -->
-        <section>
+        <section id="imagesandlinks">
             <h2>Links and Images</h2>
             <p>
                 You can create hyperlinks using the "a" tag. The "href" attribute
@@ -93,9 +94,118 @@
             <img src="../assets/skibrillen.jpg" alt="ski-glasses" width="300" height="450" />
 
         </section>
+
+        <!-- TABLES --------------------------------------------------------------------------------------------------->
+        <section>
+            <h2>Tables</h2>
+            <p>
+                You can create tables using the "table" tag. Tables are used to
+                display data in a structured format with rows and columns.
+            </p>
+            <table role="grid">
+                <caption>MLW Students</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Destiny</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hal Gibrah</td>
+                        <td>Calculator</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Cathy Terr</td>
+                        <td>Waste disposal</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <td>Lou Minious</td>
+                        <td>Lightbulb</td>
+                        <td>1956</td>
+                    </tr>
+                </tbody>
+                <tfoot>This is the footer of the table</tfoot>
+            </table>
+
+            <h3>Merging Cells</h3>
+            <p>using colspan we can merge columns, for example colspan=2, merges two columns. And with rowspan we can
+                merge rows.</p>
+            <table>
+                <caption>MLW Alumni</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2" id="name" scope="col">Name</th>
+                        <th colspan="2" id="path">Career path</th>
+                        <th rowspan="2" id="year">Year</th>
+                    </tr>
+                    <tr>
+                        <th id="past" scope="col">Past</th>
+                        <th id="future" scope="col">Destiny</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="hal" scope="row">Hal Gibrah</th>
+                        <td headers="hal path past">Calculator</td>
+                        <td headers="hal path future">Mars rover</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <th id="cathy" scope="row">Cathy Terr</th>
+                        <td headers="cathy path past">Waste disposal</td>
+                        <td headers="cathy path future">Automated teller</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <th id="lou" scope="row">Lou Minious</th>
+                        <td headers="lou path past">Lightbulb</td>
+                        <td headers="lou path future">Smart bulb</td>
+                        <td>1956</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div>{{ number }} Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum mollitia cupiditate maiores laboriosam
+            quo ut, aliquid nobis ea labore deleniti, optio non suscipit vel impedit laudantium officiis sapiente error ipsa!
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, fugiat distinctio? Commodi beatae porro, esse itaque ipsam eius exercitationem deleniti nobis delectus sapiente quia voluptatibus excepturi? Veniam cumque quis atque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium itaque eum earum recusandae incidunt, ducimus corporis. Totam hic assumenda dolores fugit nemo labore, commodi molestias molestiae dolore numquam incidunt deleniti. lorem 
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum mollitia cupiditate maiores laboriosam
+            quo ut, aliquid nobis ea labore deleniti, optio non suscipit vel impedit laudantium officiis sapiente error ipsa!
+        </div>
+        <div>{{ number }} Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum mollitia cupiditate maiores laboriosam
+            quo ut, aliquid nobis ea labore deleniti, optio non suscipit vel impedit laudantium officiis sapiente error ipsa!
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos provident expedita dolores harum neque, sit animi tempore nihil fuga tempora, mollitia non esse dolor nulla recusandae facilis ducimus maiores. Aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquid veniam, deserunt cupiditate nam velit labore quaerat dignissimos ipsa? Dolore porro nesciunt sequi voluptatibus explicabo ea iusto eligendi, magni asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quaerat ipsam quibusdam, impedit facilis aspernatur reprehenderit placeat ipsum consequuntur itaque tempore ratione veniam cupiditate tempora perspiciatis et nostrum quia quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum mollitia cupiditate maiores laboriosam
+            quo ut, aliquid nobis ea labore deleniti, optio non suscipit vel impedit laudantium officiis sapiente error ipsa!
+        </div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos provident expedita dolores harum neque, sit animi
+                tempore nihil fuga tempora, mollitia non esse dolor nulla recusandae facilis ducimus maiores. Aperiam. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Amet aliquid veniam, deserunt cupiditate nam velit labore quaerat
+                dignissimos ipsa? Dolore porro nesciunt sequi voluptatibus explicabo ea iusto eligendi, magni asperiores. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Id quaerat ipsam quibusdam, impedit facilis aspernatur
+                reprehenderit placeat ipsum consequuntur itaque tempore ratione veniam cupiditate tempora perspiciatis et nostrum
+                quia quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum mollitia cupiditate maiores laboriosam
+                quo ut, aliquid nobis ea labore deleniti, optio non suscipit vel impedit laudantium officiis sapiente error ipsa!
+            </div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos provident expedita dolores harum neque, sit animi
+                    tempore nihil fuga tempora, mollitia non esse dolor nulla recusandae facilis ducimus maiores. Aperiam. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Amet aliquid veniam, deserunt cupiditate nam velit labore quaerat
+                    dignissimos ipsa? Dolore porro nesciunt sequi voluptatibus explicabo ea iusto eligendi, magni asperiores. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Id quaerat ipsam quibusdam, impedit facilis aspernatur
+                    reprehenderit placeat ipsum consequuntur itaque tempore ratione veniam cupiditate tempora perspiciatis et nostrum
+                    quia quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum mollitia cupiditate maiores laboriosam
+                    quo ut, aliquid nobis ea labore deleniti, optio non suscipit vel impedit laudantium officiis sapiente error ipsa!
+                </div>
     </main>
     <footer>
+        <hr />
         <p>&copy; 2024 Web Development Foundations. All rights reserved.</p>
+        <a href="#top">Back to Top</a>
+        <!-- Fragment Identifier to jump to the top of the page; CAN ALSO USE '#' ALONE -->
     </footer>
 </body>
 
