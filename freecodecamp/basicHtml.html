@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- SEO meta tags -->
+    <meta name="description"
+        content="This page shows the basics of html according to the learnplatform freeCodeCamp.org" />
+
+    <!-- open graph meta tags for social media sharing (web preview) -->
+    <meta property="og:title" content="Basics of Html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.vercel.app" />
+    <!--   <meta property="og:image" content="assets/images/hero-background-unsplash.jpg" /> -->
+    <style>
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Basics of HTML by FreeCodeCamp</h1>
+    </header>
+    <main>
+        <!--Working with LINKS-->
+        <section class="links">
+            <h2>Different types of target attribute in links</h2>
+            <p>There are 4 types</p>
+            <!-- What do different type of target attribute do? There are 4 types-->
+            <a href="https://freecodecamp.org" target="_blank">Visit freeCodeCamp => _blank</a>
+            <a href="https://freecodecamp.org" target="_self">Visit freeCodeCamp => _self</a>
+            <a href="https://freecodecamp.org" target="_parent">Visit freeCodeCamp => _parent</a>
+
+            <!--_self in iframe, would load the site in the iframe itself -->
+            <iframe width="300" height="200"
+                srcdoc="<a href='https://example.com' target='_self'>Visit freeCodeCamp => _self inside a frame</a>">
+            </iframe>
+
+            <!--_parent in iframe, would load the site in the parent window (iframe, or main page) -->
+            <iframe width="300" height="200"
+                srcdoc="<a href='https://freecodecamp.org' target='_parent'>Visit freeCodeCamp => _parent inside a frame</a>">
+            </iframe>
+
+            <!--_top in iframe, opens the link in the top-most browsing context  -->
+            <iframe width="400" height="250" src='data:text/html,
+            Outer iframe<br><br>
+            <iframe width="300" height="150"
+            src="data:text/html,
+                Inner iframe<br><br>
+                <a href=https://freecodecamp.org target=_top>
+                Visit freeCodeCamp => with target _top inside embedded iframe
+                </a>">
+            </iframe>'>
+            </iframe>
+            <!--_top in iframe, opens the link in the top-most browsing context  -->
+            <iframe width="400" height="250" src='data:text/html,
+                                Outer iframe<br><br>
+                                <iframe width="300" height="150"
+                                src="data:text/html,
+                                    Inner iframe<br><br>
+                                    <a href=http://127.0.0.1:3000/index.html target=_parent>
+                                    Visit freeCodeCamp => with target _parent inside embedded iframe <br>
+                                    This would normally open the lin within the outer frame but due to security settings of the link where we want to go, it will probably open in new tab 
+                                    but expected behavious would be the oterframe as parent to open the link
+                                    </a>">
+                                </iframe>'>
+            </iframe>
+
+
+        </section>
+
+
+        <!--FORMS and TABLES -->
+        <section>
+            <h2>Forms and tables</h2>
+            <p>Forms are used to collect user input. Tables are used to display data in a tabular format.</p>
+
+            <h3>Forms</h3>
+            <p>Using the method GET, would append the form data to the URL as query parameters. If the form is submitted
+                with the POST method, the data is sent in the body of the HTTP request.</p>
+            <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Name(required):</label>
+                    <input id="full-name" required name="name" type="text" placeholder="e.g., John Doe">
+
+                    <label for="email">Email address(required):</label>
+                    <input id="email" required name="email" type="email" placeholder="example@email.com">
+                </fieldset>
+                <button type="submit">Submit as get request</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
